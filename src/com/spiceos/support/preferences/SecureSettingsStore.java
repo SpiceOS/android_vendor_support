@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.preference;
+package com.spiceos.support.preferences;
 
 import android.content.ContentResolver;
 import android.preference.PreferenceDataStore;

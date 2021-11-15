@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.colorpicker;
+package com.spiceos.support.colorpicker;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.colorpicker;
+package com.spiceos.support.colorpicker;
 
 import android.app.AlertDialog;
 import android.app.NotificationManager;
@@ -31,7 +31,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 
-import org.aospextended.support.R;
+import com.spiceos.support.R;
 
 public class ColorPickerDialog extends AlertDialog implements ColorPickerView.OnColorChangedListener, View.OnClickListener {
 
@@ -39,9 +39,9 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
     private ColorPickerPanelView mOldColor;
     private ColorPickerPanelView mNewColor;
     private EditText mHex;
-    
+
     private boolean mShowLedPreview;
- 
+
     private NotificationManager mNoMan;
     private Context mContext;
 
@@ -53,7 +53,7 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
 
     ColorPickerDialog(Context context, int initialColor, boolean showLedPreview) {
         super(context);
-        
+
         mContext = context;
         mShowLedPreview = showLedPreview;
 
@@ -73,7 +73,7 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(
                 Context.LAYOUT_INFLATER_SERVICE);
         mNoMan = (NotificationManager)
-                mContext.getSystemService(Context.NOTIFICATION_SERVICE);        
+                mContext.getSystemService(Context.NOTIFICATION_SERVICE);
 
         assert inflater != null;
         View layout = inflater.inflate(R.layout.dui_dialog_color_picker, null);
@@ -163,7 +163,7 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
         }
         dismiss();
     }
-    
+
     @Override
     public void onStop() {
         super.onStop();

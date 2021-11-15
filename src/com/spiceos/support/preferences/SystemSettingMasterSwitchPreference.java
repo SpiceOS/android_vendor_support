@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.preference;
+package com.spiceos.support.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.aospextended.support.preference.SystemSettingsStore;
+import com.spiceos.support.preferences.SystemSettingsStore;
 
 public class SystemSettingMasterSwitchPreference extends MasterSwitchPreference {
 

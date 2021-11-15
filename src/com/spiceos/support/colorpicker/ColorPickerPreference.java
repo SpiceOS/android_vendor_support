@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.colorpicker;
+package com.spiceos.support.colorpicker;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -36,7 +36,7 @@ import android.widget.LinearLayout;
 
 import androidx.preference.*;
 
-import org.aospextended.support.R;
+import com.spiceos.support.R;
 
 /**
  * A preference type that allows a user to choose a time
@@ -58,7 +58,7 @@ public class ColorPickerPreference extends Preference implements
     static final int DEF_VALUE_DEFAULT = -6;
     boolean mUsesDefaultButton = false;
     int mDefValue = -1;
-    
+
     private boolean mShowLedPreview;
 
     private EditText mEditText;
